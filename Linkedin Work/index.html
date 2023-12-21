@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked-In Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="working.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./images/Logo.png" alt="Linked-In Logo" class="headerLogo">
+        <div id="navElements">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-newspaper" id="navFont"></i>
+                        <p style="margin-top: -1%;">Artciles</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-person" id="navFont"></i>
+                        <p style="margin-top: -1%;">People</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-newspaper" id="navFont"></i>
+                        <p style="margin-top: -1%;">Learning</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-person" id="navFont"></i>
+                        <p style="margin-top: -1%;">Jobs</p>
+                    </a>
+                </li>
+                <li class="borNav">
+                    <a href="">
+                        <i class="fa-solid fa-newspaper" id="navFont"></i>
+                        <p style="margin-top: -1%;">Get the app</p>
+                    </a>
+                </li>
+        </div>
+        <div id="navBtn">
+            <button id="btn" class="btn1">
+                Join now
+            </button>
+            <button id="btn" class="btn2">
+                Sign in
+            </button>
+        </div>
+    </header>
+
+    <section id="homeSection">
+        <div id="formSection">
+            <h1 class="formH1">
+                Discover what your <br> network can do for you
+            </h1>
+
+            <form id="formDiv">
+                <div class="inpOne">
+                    <label for="name">Email or phone</label>
+                    <br>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="inpOne">
+                    <label for="name">Password</label>
+                    <br>
+                    <input type="password" name="password" id="password" required>
+                    
+                    <button type="button" id="showInput" onclick="callShow()">Show</button>
+                    <button type="button" id="hideInput" style="display: none;" onclick="callHide()">Hide</button>
+                </div>
+                <a href="" class="formHref">Forgot password?</a>
+                <input type="submit" value="Sign in" class="submit" id="submitButton">
+            </form>
+
+            <span style="display: flex;flex-direction: row;align-items: center;justify-content: center;width: 70%;margin-left: 5rem;top: -6%;position: relative;">
+                <hr style="width: 40%;height: 0.2%;">
+                <h3 style="width: 0%;display: flex;align-items: center;justify-content: center;">or</h3>
+                <hr style="width: 40%;height: 0.2%;">
+            </span>
+            <div id="googleBtnSection">
+                <p>
+                    By clicking Continue, you agree to LinkedIn’s <a href=""> User Agreement, Privacy Policy,</a> and <a href="">Cookie Policy</a>.
+                </p>
+                <button class="btnGoog"><img src="./images/googleIcon.png" height="15px" width="15px" style="margin-left: -4%;position: absolute;" alt="Google Icon">Continue with Google</button>
+                <button class="btnGoog">New to LinkedIn? Join now</button>
+            </div>
+        </div>
+
+        <div id="imgSection">
+            <img src="./images/homeImage.png" alt="">
+        </div>
+    </section>
+
+    <!-- section 1 /...... -->
+    <section id="sectionTwo">
+        <div id="subSecOne">
+            <h1 style="font-size: 3rem;font-weight: 100;margin-left: 6rem;margin-top: 5%;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                Explore <br> collaborative <br> articles
+            </h1>
+            <p style="margin-left: 6rem;margin-top: -5%;font-size: 1.3rem;opacity: 0.8;letter-spacing: 0.5px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                We’re unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.
+            </p>
+        </div>
+        <div id="subSecTwo">
+            <button>Marketing</button>
+            <button>Public Administration</button>
+            <button>HealthCare</button>
+            <button>Engineering</button>
+            <br>
+            <button>IT Service</button>
+            <button>Sustainability</button>
+            <button>Bussiness Administration</button>
+            <br>
+            <button>Telecommunications</button>
+            <button>HR Management</button>
+            <button class="active">Show all</button>
+        </div>
+    </section>
+
+    <!-- section 2 /...... -->
+    <section id="sectionThree">
+        <div id="subSecOne">
+            <h1 style="font-size: 3rem;font-weight: 100;margin-left: 6rem;margin-top: 5%;">
+                Find the right job or <br> internship for you
+            </h1>
+        </div>
+        <div id="subSecTwo">
+            <h1 style="margin-top: -2.5%;font-size: 1.2rem;">SUGGESTED SEARCHES</h1>
+            <button>Engineering</button>
+            <button>Business Development</button>
+            <button>Finance</button>
+            <button>Administrative Assistant</button>
+            <button>Retail Associate</button>
+            <button>Custom Service</button>
+            <button>Operation</button>
+            <button>Information Technology</button>
+            <button>Marketing</button><br>
+            <button>Human Resources</button><br>
+            <button>Show more <i class="fa-solid fa-angle-down" style="margin-left: 5px;margin-top: 2px;"></i></button>
+        </div>
+    </section>
+
+    <!-- section 3 /............ -->
+    <section id="sectionFour">
+        <div id="subSecOne">
+            <h1>
+                Post your job for <br> millions of people to <br> see
+            </h1>
+        </div>
+        <div id="subSecTwo">
+            <button class="active" style="margin-top: -10%;">Post a job</button>
+        </div>
+    </section>
+
+    <!-- section 4 /...... -->
+    <section id="sectionThree">
+        <div id="subSecOne">
+            <h1 style="font-size: 3rem;font-weight: 100;margin-left: 6rem;margin-top: 5%;">
+                Discover the best <br> software tools
+            </h1>
+            <p style="margin-left: 6rem;margin-top: -5%;font-size: 1.3rem;opacity: 0.8;letter-spacing: 0.5px;">
+                Connect with buyers who have first-hand experience to find the best products for you.
+            </p>
+        </div>
+        <div id="subSecTwo">
+            <h1 style="margin-top: -2.5%;font-size: 1.2rem;">SUGGESTED TOOLS</h1>
+            <button>E-Commerce Platforms</button>
+            <button>CRM Software</button>
+            <button>Human Resource Management System</button>
+            <button>Recruiting Software</button>
+            <button>Sales Intelligence Software</button>
+            <button>Project Management Software</button>
+            <button>Help Desk Software</button>
+            <button>Social Networking Software</button>
+            <button>Desktop Publishing Software</button>
+            <button class="active">Show all</button>
+        </div>
+    </section>
+
+    <!-- section 5 /......... -->
+    <section id="sliderSection">
+        <div id="slideSecOne">
+            <div id="slideOne">
+                <h1 class="slideTopic">Let the right people know <br> you’re open to work</h1>
+                <p class="slidePara">
+                    With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.
+                </p>
+            </div>
+            <div id="slideTwo">
+                <img src="./images/slider1.png" alt="slider1.png" class="sliderImage">
+                <button class="sliderBtnRight">
+                    <i class="fa-solid fa-angle-up" id="sliderArrowRight"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5 /............. -->
+    <section id="bannerSection">
+        <div id="connectPeople">
+            <img src="https://static.licdn.com/aero-v1/sc/h/b1fxwht7hdbeusleja7ciftsj" alt="">
+            <h1 style="font-size: 3rem;font-weight: 100;margin-left: 6rem;">Connect with people <br> who can help</h1>
+            <button id="connectSecBtn">Find people you know</button>
+        </div>
+        <div id="dropDownSection">
+            <img src="https://static.licdn.com/aero-v1/sc/h/dkfub4sc7jgzg3o31flfr91rv" alt="">
+            <h1 style="font-size: 3rem;font-weight: 100;">Learn the skills you <br>need to succeed</h1>
+            <select name="dropDownBtn" id="dropBtn">
+                <option value="">Choose topic to learn about it</option>
+                <option value="">
+                    <a href="">Business Analysis and Strategy</a></option>
+                <option value=""><a href="">Business Software and Tools</a></option>
+                <option value=""><a href="">Career Development</a></option>
+                <option value=""><a href="">Customer Service</a></option>
+                <option value=""><a href="">Diversity, Equity, and Inclusion (DEI)</a></option>
+                <option value=""><a href="">Finance and Accounting</a></option>
+                <option value=""><a href="">Human Resources</a></option>
+                <option value=""><a href="">Business Software and Tools</a></option>
+                <option value=""><a href="">Career Development</a></option>
+                <option value=""><a href="">Customer Service</a></option>
+                <option value=""><a href="">Diversity, Equity, and Inclusion (DEI)</a></option>
+                <option value=""><a href="">Finance and Accounting</a></option>
+                <option value=""><a href="">Human Resources</a></option>
+            </select>
+        </div>
+    </section>
+
+    <!-- section 6 /............. -->
+    <section id="navigateSection">
+        <div id="navigationForm">
+            <h1 style="margin-top: 30%;">
+                <span style="color: #b24020;font-weight: bolder;">
+                    Who is LinkedIn for?<br>
+                </span>
+                Anyone looking to navigate their professional life.
+            </h1>
+            <div id="navigationBtnDiv">
+                <button>Find a coworker or classmate <i class="fa-solid fa-angle-up"></i></button>
+                <button>Find a new job <i class="fa-solid fa-angle-up"></i></button>
+                <button>Find a course or training <i class="fa-solid fa-angle-up"></i></button>
+            </div>
+        </div>
+        <div id="navigationImage">
+            <img src="./images/peopleBanner.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- section 7 /............. -->
+    <section id="youtubeSection">
+            <div id="youTubeOne">
+            <!-- <img src="./images/youtube.png" alt="" height="100%" width="100%"> -->
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IlYUUN8rL_Y?si=9o8aFDCPxsvZXQeB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+            </div>
+            <div id="youtubeTwo">
+            <h1>
+                <span style="font-size: 2rem;color:#b24020;font-weight: bolder;">In it to chase my dream</span><br>
+                Check out Gayatri’s story of <br>finding a new job on LinkedIn
+            </h1>
+        </div>
+    </section>
+
+    <!-- big banner section /......... -->
+    <section id="bigBannerSection">
+        <img src="./images/bigBanner.png" height="95%" width="100%" alt="banner page">
+        <div id="bigBannerSectionDiv">
+            <h1 >Join your colleagues, classmates, and friends on LinkedIn.</h1>
+            <button>Get Started</button>
+        </div>
+    </section>
+    <!-- footer section /...... -->
+    <footer id="footerSection">
+        <div id="footOne">
+            <img src="./images/Logo.png" alt="" height="20%" width="30%">
+        </div>
+        <div id="footTwo">
+            <label class="footLabel">General</label>
+            <ul class="footUl">
+                <li class="footLi"><a href="" class="footA">Sign Up</a></li>
+                <li class="footLi"><a href="" class="footA">Help Center</a></li>
+                <li class="footLi"><a href="" class="footA">About</a></li>
+                <li class="footLi"><a href="" class="footA">Press</a></li>
+                <li class="footLi"><a href="" class="footA">Blog</a></li>
+                <li class="footLi"><a href="" class="footA">Careers</a></li>
+                <li class="footLi"><a href="" class="footA">Developers</a></li>
+            </ul>
+        </div>
+        <div id="footThree">
+            <label class="footLabel">Browse LinkedIn</label>
+            <ul class="footUl">
+                <li class="footLi"><a href="" class="footA">Learning</a></li>
+                <li class="footLi"><a href="" class="footA">Jobs</a></li>
+                <li class="footLi"><a href="" class="footA">Salary</a></li>
+                <li class="footLi"><a href="" class="footA">Mobile</a></li>
+                <li class="footLi"><a href="" class="footA">Services</a></li>
+                <li class="footLi"><a href="" class="footA">Products</a></li>
+                <li class="footLi"><a href="" class="footA">Top Companies Hub</a></li>
+            </ul>
+        </div>
+        <div id="footFour">
+            <label class="footLabel">Business Solutions</label>
+            <ul class="footUl">
+                <li class="footLi"><a href="" class="footA">Talent</a></li>
+                <li class="footLi"><a href="" class="footA">Marketing</a></li>
+                <li class="footLi"><a href="" class="footA">Sales</a></li>
+                <li class="footLi"><a href="" class="footA">Learning</a></li>
+            </ul>
+        </div>
+        <div id="footFive">
+            <label class="footLabel" style="margin-top: 7%;">Directories</label>
+            <ul class="footUl">
+                <li class="footLi"><a href="" class="footA">Members</a></li>
+                <li class="footLi"><a href="" class="footA">Jobs</a></li>
+                <li class="footLi"><a href="" class="footA">Companies</a></li>
+                <li class="footLi"><a href="" class="footA">Featured</a></li>
+                <li class="footLi"><a href="" class="footA">Learning</a></li>
+                <li class="footLi"><a href="" class="footA">Posts</a></li>
+                <li class="footLi"><a href="" class="footA">Articles</a></li>
+                <li class="footLi"><a href="" class="footA">Schools</a></li>
+                <li class="footLi"><a href="" class="footA">News</a></li>
+                <li class="footLi"><a href="" class="footA">News Letters</a></li>
+                <li class="footLi"><a href="" class="footA">Services</a></li>
+                <li class="footLi"><a href="" class="footA">Products</a></li>
+                <li class="footLi"><a href="" class="footA">Advice</a></li>
+                <li class="footLi"><a href="" class="footA">People Search</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
